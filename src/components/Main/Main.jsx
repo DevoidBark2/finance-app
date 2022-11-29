@@ -5,6 +5,7 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {BsFillBarChartFill} from 'react-icons/bs'
 import {RxActivityLog} from 'react-icons/rx'
 import {BiReceipt} from 'react-icons/bi'
+import Home from "./Home/Home";
 const Main = () =>{
     return(
         <div className={styles.main}>
@@ -28,7 +29,7 @@ const Main = () =>{
             </div>
             <div className={styles.main_content}>
                 <Routes>
-                    <Route path="/" element={<div>домашнаяя страницы</div>}/>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/records" element={<div>Записи</div>}/>
                     <Route path="/dashboard" element={<div>графики</div>}/>
                     <Route path="/transaction" element={<div>транзакции</div>}/>
