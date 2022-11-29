@@ -1,0 +1,23 @@
+﻿.main{
+    display: flex;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 20px;
+    background-color: #592424;
+    height: calc(100vh - 190px);
+}
+.link{
+    text-decoration: none;
+    font-size: 26px;
+    color:white;
+    transition: color 200ms linear;
+}
+.link:hover{
+    color: #943d3d;
+}
+.link_title{
+    margin-left: 10px;
+}
