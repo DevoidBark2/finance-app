@@ -1,0 +1,38 @@
+﻿.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: brown;
+}
+.logo_block{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.logo_text{
+    font-size: 34px;
+    margin-left: 10px;
+    color:white;
+}
+.profile_block{
+    display: flex;
+    align-items: center;
+}
+.profile_logo{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.auth{
+    display: flex;
+    align-items: center;
+}
+.auth_item{
+    margin-left: 10px;
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #882525;
+    padding: 10px;
+}
