@@ -6,6 +6,7 @@ import {BsFillBarChartFill} from 'react-icons/bs'
 import {RxActivityLog} from 'react-icons/rx'
 import {BiReceipt} from 'react-icons/bi'
 import Home from "./Home/Home";
+import Records from "./Records/Records";
 const Main = () =>{
     return(
         <div className={styles.main}>
@@ -30,7 +31,7 @@ const Main = () =>{
             <div className={styles.main_content}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/records" element={<div>Записи</div>}/>
+                    <Route path="/records" element={<Records/>}/>
                     <Route path="/dashboard" element={<div>графики</div>}/>
                     <Route path="/transaction" element={<div>транзакции</div>}/>
                 </Routes>
