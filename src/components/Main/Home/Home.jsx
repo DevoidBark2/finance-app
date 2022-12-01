@@ -99,10 +99,11 @@ const Home = () =>{
         },
     ];
     const data4 = [
-        { name: 'Group A', value: 10400 },
+        /*{ name: 'Group A', value: 10400 },
         { name: 'Group B', value: 9000 },
         { name: 'Group C', value: 3400 },
-        { name: 'Group D', value: 1000 },
+        { name: 'Group D', value: 1000 }*/
+        {name:'Test',value:100}
     ];
     /*const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
     const RADIAN = Math.PI / 180;

@@ -4,12 +4,14 @@
 .menu{
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding: 40px;
     gap: 20px;
     background-color: #592424;
-    height: calc(100vh - 190px);
+    height: calc(100vh - 150px);
 }
 .link{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 26px;
     color:white;
@@ -17,6 +19,19 @@
 }
 .link:hover{
     color: #943d3d;
+}
+.link_bottom{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 26px;
+    transition: color 200ms linear;
+    color:white;
+    position: fixed;
+    bottom: 30px;
+}
+.link_bottom:hover{
+    color:#943d3d;
 }
 .link_title{
     margin-left: 10px;

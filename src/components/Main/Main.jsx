@@ -5,8 +5,12 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {BsFillBarChartFill} from 'react-icons/bs'
 import {RxActivityLog} from 'react-icons/rx'
 import {BiReceipt} from 'react-icons/bi'
+import {CiSettings} from 'react-icons/ci'
 import Home from "./Home/Home";
 import Records from "./Records/Records";
+import Transaction from "./Transaction/Transaction";
+import Graphs from "./Graphs/Graphs";
+import Settings from "./Settings/Settings";
 const Main = () =>{
     return(
         <div className={styles.main}>
@@ -27,13 +31,18 @@ const Main = () =>{
                     <RxActivityLog/>
                     <span className={styles.link_title}>Транзакции</span>
                 </Link>
+                <Link className={styles.link_bottom} to="/settings">
+                    <CiSettings/>
+                    <span className={styles.link_title}>Настройки</span>
+                </Link>
             </div>
             <div className={styles.main_content}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/records" element={<Records/>}/>
-                    <Route path="/dashboard" element={<div>графики</div>}/>
-                    <Route path="/transaction" element={<div>транзакции</div>}/>
+                    <Route path="/dashboard" element={<Graphs/>}/>
+                    <Route path="/transaction" element={<Transaction/>}/>
+                    <Route path="/settings" element={<Settings/>}/>
                 </Routes>
             </div>
         </div>

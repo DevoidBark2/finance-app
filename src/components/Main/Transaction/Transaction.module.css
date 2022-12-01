@@ -1,0 +1,20 @@
+﻿.title{
+    margin-left: 20px;
+}
+.table_transaction{
+    width:1200px;
+    margin-left:19px;
+    overflow-y:auto;
+    max-height:calc(100vh - 190px);
+    border: 1px solid black;
+}
+.table_transaction::-webkit-scrollbar{
+    width: 4px;
+    background-color: rgba(26, 24, 47, 0.1);
+    border-radius: 2px;
+    height: 20px;
+}
+.table_transaction::-webkit-scrollbar-thumb{
+    background: #435191;
+    border-radius: 2px;
+}

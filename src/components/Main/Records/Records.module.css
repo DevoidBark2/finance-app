@@ -1,3 +1,9 @@
 ﻿.records{
-    
+    display: flex;
+    flex-direction: column;
 }
+/*
+.MuiSelect-select{
+    display: flex !important;
+    align-items: center !important;
+}*/
