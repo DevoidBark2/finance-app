@@ -40,7 +40,21 @@ const Transaction = () =>{
     ];
     return(
         <div>
-            <h1 className={styles.title}>Транзакции</h1>
+            <div className={styles.top_block}>
+                <h1 className={styles.title}>Транзакции</h1>
+                    <span>Фильтр</span>
+                    <div className={styles.month_filter}>
+                        <span>Выбрать месяц</span>
+                        <p>Январь</p>
+                    </div>
+                    <div className={styles.type_filter}>
+                        <span>Выбрать операцию</span>
+                        <p>Пополнение</p>
+                    </div>
+                <div>
+                    <button className={styles.button}>Применить фильтр</button>
+                </div>
+            </div>
             <div className={styles.table_transaction}>
                 <TableContainer component={Paper} >
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
